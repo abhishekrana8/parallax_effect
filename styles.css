@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parl{
+    height: 100vh;
+    overflow-x: hidden ;
+    overflow-y: auto;
+    perspective: 40px;
+
+}
+.cont{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+#bac ,#for{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    
+}
+#bac{
+    transform:translateZ(-40px) ;
+    scale:250%;
+}
+#for{
+    transform: translateZ(-20px);
+    scale: 2;
+}
+#tex{
+    color: white;
+    background-color: grey;
+}
